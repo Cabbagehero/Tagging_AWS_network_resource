@@ -8,22 +8,22 @@ def requesting_client(region):
     global client
     client = boto3.client(
         'ec2',
-        aws_access_key_id="AKIAR225BHFSJTESW3QW",
-        aws_secret_access_key="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",
+        aws_access_key_id="keyid",
+        aws_secret_access_key="keysecret",
         region_name=region,
     )
     global certificate_client
     certificate_client = boto3.client(
         'acm',
-        aws_access_key_id="AKIAR225BHFSJTESW3QW",
-        aws_secret_access_key="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",
+        aws_access_key_id="keyid",
+        aws_secret_access_key="keysecret",
         region_name=region,
     )
     global dx_client
     dx_client = boto3.client(
         'directconnect',
-        aws_access_key_id="AKIAR225BHFSJTESW3QW",
-        aws_secret_access_key="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",
+        aws_access_key_id="keyid",
+        aws_secret_access_key="keysecretI",
         region_name=region,
     )
 
@@ -560,7 +560,6 @@ def tagging_dxconns(region, account):
             else:
                 print('Tag matches tag tree and already in there')
 
-# tagging_dxconns('ap-southeast-1', 'network-pre-prd')
 def tagging_dxvif(region, account):
     dxvifinfo = dx_client.describe_virtual_interfaces()
     print(dxvifinfo)
@@ -600,4 +599,3 @@ def tagging_dxvif(region, account):
             else:
                 print('Tag matches tag tree and already in there')
 
-# tagging_dxvif('us-east-1', 'network-pre-prd')
