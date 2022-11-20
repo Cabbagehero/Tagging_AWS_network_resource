@@ -1,0 +1,11 @@
+Number,Project,App,Service,Owner
+1,OPSNetwork,InfraOPS,VPC,yding
+2,OPSNetwork,InfraOPS,squid,yding
+3,OPSNetwork,InfraOPS,natgw,yding
+4,OPSNetwork,InfraOPS,igw,yding
+5,OPSNetwork,InfraOPS,tgw,yding
+6,OPSNetwork,Test,vgw,yding
+7,OPSNetwork,Test,laobai,laobai
+8,OPSNetwork,Test,laobai,laobai
+9,OPS,Test,laobai,laobai
+10,OPS,Laobai,houye,laobai
